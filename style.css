@@ -1,0 +1,404 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+    scroll-behavior: smooth;
+    background: var(--bgcolor);
+      }
+:root{
+   
+    --primary: goldenrod;
+    --secondary: #fff;
+    --bgcolor: #0A21C0; 
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.nav1{
+    width: 100%; 
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 1.5px 1.5px 1.5px #FEE715;
+    text-align: center;
+}
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 1.3px;
+    color: var(--secondary);
+    font-size: 20px;
+}
+.nav1 .left span{
+    color: var(--primary);
+    font-weight: 7px;
+    font-size: 20px;  
+}
+.nav1 .left button{
+    background: var(--secondary);
+    padding: 2px;
+    border-radius: 4rem;
+    box-shadow: 0 0 .8rem var(--secondary);
+    transition: .5s ease;
+    border: none;
+    font-size: 16px;
+}
+.nav1 .left a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.right{
+    flex-basis: 50%;
+}
+.right i{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color: var(--primary);
+    color: var(--bgcolor);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.8s ease-in-out;
+}
+.nav1 .right i:hover{
+    transform: rotate(360deg);
+}
+.nav2{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.nav2 .nav2left, .nav2 .nav2center, .nav2 .nav2right{
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+.nav2 .nav2left{
+    color: var(--secondary);
+    font-size: 20px;
+}
+.nav2 .nav2left i{
+    margin-left: 15px;
+    color: var(--primary);
+}
+.nav2 .nav2center h1{
+color: var(--primary);
+font-size: 2rem;
+letter-spacing: 2px;
+font-weight: bold;
+}
+.nav2 .nav2center p{
+    color: var(--secondary);
+    font-size: 20px;
+    margin-top: 5px;
+}
+.nav2 .nav2right{
+    color: var(--secondary);
+    font-size: 20px;
+}
+.nav2 .nav2right i{
+    margin: 0px 5px;
+    color: var(--primary);
+}
+.nav3{
+   width: 100%;
+   height: 70px;
+   line-height: 70px;
+   font-size: 17px;
+}
+.nav3 ul{
+    list-style: none;
+    text-align: center;
+}
+.nav3 ul li{
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    z-index: 99;
+}
+.nav3 ul li a{
+    text-decoration: none;
+    color:var(--secondary);
+    font-weight: 500;
+    display: block;
+}
+.nav3 ul li i{
+    margin: 0px 5px;
+    color: var(--primary);
+}
+.nav3 ul li a:hover{
+    color: var(--primary);
+}
+.featured{
+    width: 100%;
+    height: 61vh;
+    background: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;background-position: top;
+}
+.featured .featured-text button{
+    background: var(--primary);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 0 0 .8rem var(--primary);
+    transition: .5s ease;
+    border: none;
+    margin-top: 20px;
+    margin-left: 600px;
+}
+.latest{
+    padding: 110px 100px;
+    margin-top: -70px;
+}
+.product-intro h1{
+    color: var(--primary);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.product-intro{
+    text-align: center;
+}
+.product-intro p{
+    color: var(--secondary);
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+.card i{
+    color: goldenrod;
+    margin: 10px 0;
+}
+.card img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.card button{
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+.card p{
+    font-size: 20px;
+}
+ .card:hover h1{
+    color: var(--primary);
+} 
+.card-container{ display: flex;justify-content: center;cursor: pointer;
+    align-items: center;gap: 3rem;margin: 3rem 0;width: 100%;justify-content: space-between;}
+    
+.card-container .card{ padding: 0.8rem; text-align: center;transition: .5s ease;
+    position: relative;color: var(--secondary); flex-basis: 20%;}
+
+.card-container .card:hover{ transform: scale(1.06);}
+
+.card::before{
+    content: "20% off";
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: goldenrod;
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+}
+.trends{
+    padding: 50px 100px;
+    
+}
+footer{
+    background-color: #1c0080;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+}
+footer h1{
+    color: var(--primary);
+    letter-spacing: 0.5rem;
+    
+}
+footer i{
+    color: var(--primary);
+    margin: 0px 5px;
+}
+footer div{
+    flex-basis: 30%;
+}
+footer p{
+    font-size: 1.2rem;
+}
+footer .last{
+    margin-top: 32px;
+}
+#sidenav{
+    display: none;
+}
+#menubar{
+    display: none;
+}
+@media only screen and (max-width: 769px) {
+    .nav1{
+        position: relative;
+        z-index: 2;
+        background-color: var(--bgcolor);
+    }
+    .right i{
+       font-size: 15px;
+       margin: 0px 5px;
+    }
+    .nav2{
+        width: 100%;
+        height: 80px;
+        
+    }
+    .nav2 .nav2left i{
+        margin-left: 0px;
+        color: var(--primary);
+    }
+    .nav2 .nav2center h1{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    }
+    .nav2 .nav2center p{
+        color: var(--secondary);
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .nav2 .nav2right i{
+        margin: 0px 5px;
+    }
+    .nav3{
+        display: none;
+    }
+    .featured{
+        background-attachment: fixed;
+    }
+    .latest{
+        padding: 0px 50px;
+    }
+    .product-intro h1{
+        color: var(--primary);
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .product-intro{
+        text-align: center;
+    }
+    .product-intro p{
+        color: var(--secondary);
+        font-size: 20px;
+        margin: 15px 0px;
+    }
+    
+    .card i{
+        color: goldenrod;
+        margin: 10px 0;
+    }
+    .card img{
+        width: 100%;
+        transition: 0.5s ease-in-out;
+    }
+    .card button{
+        padding: 5px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        margin-top: 15px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+     .card:hover h1{
+        color: var(--primary);
+    } 
+    .card-container{ 
+        margin: 2rem 0;}
+    .card-container .card{ 
+        padding: 0.8rem;
+        position: relative;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    footer div{
+        flex-basis: 7%;
+        margin: 10px 0px;
+    }
+    #sidenav{
+        display: block;
+    }
+    #menubar{
+        display: block;
+        position: absolute;
+        
+        right: 0%;
+        transform: translate(0%, -2%);
+        z-index: 99;
+        background-color: var(--primary);
+        color: #fff;
+        font-size: 2rem;
+        padding: 20px 10px;
+    }
+    #sidenav{
+        width: 0px;
+        height: 61vh;
+        font-size: 17px;
+        position: absolute;
+        z-index: 3;
+        background-color: var(--primary);
+        padding-top: 50px;
+        display: block;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+        top: -50;
+        left: 0;
+
+     }
+     #sidenav ul{
+         list-style: none;
+         
+     }
+     #sidenav ul li{
+         display:block;
+         width: 200px;
+         position: relative;
+         z-index: 99;
+         margin: 10px 20px;
+     }
+     #sidenav ul li a{
+         text-decoration: none;
+         color:black;
+         font-weight: 500;
+         display: block;
+         font-size: 20px;
+         padding: 10px 20px;
+     }
+     #sidenav ul li i{
+         margin: 0px 5px;
+         color: black;
+     }
+     #sidenav ul li a:hover{
+         color: var(--bgcolor);
+     }
+     #sidenav ul li i:hover{
+        color: var(--bgcolor);
+     }
+}
